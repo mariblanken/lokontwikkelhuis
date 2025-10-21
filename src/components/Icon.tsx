@@ -3,9 +3,10 @@ import { Bolt, Wrench, Settings, Monitor } from 'lucide-react';
 interface IconProps {
   name: string;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-export function Icon({ name, className = "w-6 h-6" }: IconProps) {
+export function Icon({ name, className = "w-6 h-6", style }: IconProps) {
   const iconMap = {
     bolt: Bolt,
     wrench: Wrench,
@@ -19,5 +20,5 @@ export function Icon({ name, className = "w-6 h-6" }: IconProps) {
     return null;
   }
 
-  return <IconComponent className={className} />;
+  return <IconComponent className={className} style={style} />;
 }
