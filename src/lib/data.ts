@@ -1,4 +1,4 @@
-import { RoutesData } from './types';
+import { RoutesData, Route } from './types';
 import routesData from '../data/routes.nl.json';
 
 let cachedData: RoutesData | null = null;
