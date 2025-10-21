@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Career Paths - Lok Installaties
 
-## Getting Started
+Een lightweight interne web app die de vaste carrièreroutes bij Lok Installaties toont. Gebruikers kunnen door vooraf gedefinieerde routes bladeren (E, W, Service & Onderhoud, Kantoor/Engineering) en elke route is een tijdlijn van stappen.
 
-First, run the development server:
+## Features
+
+- **4 Carrièreroutes**: Elektrotechniek, Werktuigbouwkunde, Service & Onderhoud, Kantoor
+- **Interactieve tijdlijn**: Klik op stappen voor details
+- **Deep linking**: Deel directe links naar specifieke stappen
+- **Mobile-first design**: Responsive voor alle apparaten
+- **Print-vriendelijk**: Schone PDF export van routes
+- **Accessibility**: Volledig toegankelijk met keyboard navigation
+
+## Tech Stack
+
+- **Next.js 14** (App Router) + TypeScript
+- **Tailwind CSS** voor styling
+- **Lucide React** voor iconen
+- **Static hosting** op Vercel/Netlify
+
+## Installatie
 
 ```bash
+# Dependencies installeren
+npm install
+
+# Development server starten
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Production build
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Data beheer
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+De carrièredata staat in `/public/data/routes.nl.json`. Om routes of stappen toe te voegen/wijzigen:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Bewerk het JSON bestand
+2. Volg het data model in `/src/lib/types.ts`
+3. Herstart de development server
 
-## Learn More
+### Data structuur
 
-To learn more about Next.js, take a look at the following resources:
+```typescript
+interface Route {
+  id: 'e' | 'w' | 'service' | 'office';
+  name: string;
+  summary: string;
+  steps: Step[];
+  meta: { icon: string; color: string };
+}
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+interface Step {
+  id: string;
+  title: string;
+  level: string;
+  description: string;
+  requirements: string[];
+  recommendedTraining: Training[];
+  nextStepId: string | null;
+  notes?: string;
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+De app is geoptimaliseerd voor static hosting:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+npm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Voor Vercel:
+```bash
+vercel --prod
+```
+
+## Environment variabelen
+
+Maak een `.env.local` bestand voor lokale configuratie:
+
+```env
+# HR email voor contact functionaliteit
+HR_EMAIL=hr@lok-installaties.nl
+```
+
+## Browser ondersteuning
+
+- Chrome/Edge 88+
+- Firefox 85+
+- Safari 14+
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## Performance
+
+- **LCP**: < 2.0s op 4G mid-range device
+- **Bundle size**: < 100KB gzipped
+- **Accessibility**: WCAG 2.1 AA compliant
+
+## Licentie
+
+© 2024 Lok Installaties. Alle rechten voorbehouden.

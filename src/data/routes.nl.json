@@ -1,0 +1,663 @@
+{
+  "routes": [
+    {
+      "id": "e",
+      "name": "Elektrotechniek",
+      "summary": "Van monteur E naar projectleider E",
+      "meta": {
+        "icon": "bolt",
+        "color": "#0EA5E9"
+      },
+      "steps": [
+        {
+          "id": "trainee",
+          "title": "Stagiair",
+          "level": "BBL/MBO",
+          "description": "Je leert de basis van elektrotechniek onder begeleiding van ervaren monteurs.",
+          "requirements": [
+            "BBL of MBO opleiding",
+            "Leergierig en gemotiveerd",
+            "Goede communicatieve vaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "VCA Basis",
+              "provider": "Lok Academy",
+              "link": "/training/vca-basis"
+            }
+          ],
+          "nextStepId": "monteur",
+          "notes": "Intensieve begeleiding en veel praktijkervaring opdoen."
+        },
+        {
+          "id": "monteur",
+          "title": "Monteur",
+          "level": "MBO 2-3",
+          "description": "Je voert zelfstandig werkzaamheden uit en bouwt installaties op.",
+          "requirements": [
+            "VCA Basis",
+            "Rijbewijs B",
+            "Basis NEN 3140 (Veilig werken)"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "NEN 3140 VP",
+              "provider": "Lok Academy",
+              "link": "/training/nen-3140-vp"
+            },
+            {
+              "label": "Tekening lezen",
+              "provider": "Lok Academy",
+              "link": "/training/tekening-lezen"
+            }
+          ],
+          "nextStepId": "first-monteur",
+          "notes": "Begeleiding door 1e monteur."
+        },
+        {
+          "id": "first-monteur",
+          "title": "1e Monteur",
+          "level": "MBO 3-4",
+          "description": "Je begeleidt junior monteurs en neemt complexere projecten voor je rekening.",
+          "requirements": [
+            "NEN 3140 VP",
+            "Ervaring als monteur",
+            "Leiderschapsvaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "NEN 1010",
+              "provider": "Lok Academy",
+              "link": "/training/nen-1010"
+            },
+            {
+              "label": "Planning & materiaalbeheer",
+              "provider": "Lok Academy",
+              "link": "/training/planning"
+            }
+          ],
+          "nextStepId": "specialist-e",
+          "notes": "Verantwoordelijk voor kwaliteit en veiligheid van het team."
+        },
+        {
+          "id": "specialist-e",
+          "title": "Specialist E",
+          "level": "MBO techniek + NEN 1010/3140 VP",
+          "description": "Je bent expert op het gebied van elektrotechniek en adviseert bij complexe projecten.",
+          "requirements": [
+            "NEN 1010 certificering",
+            "NEN 3140 VP",
+            "Minimaal 5 jaar ervaring"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "NEN 1010 VP",
+              "provider": "Lok Academy",
+              "link": "/training/nen-1010-vp"
+            },
+            {
+              "label": "Projectmanagement",
+              "provider": "Lok Academy",
+              "link": "/training/projectmanagement"
+            }
+          ],
+          "nextStepId": "werkvoorbereider-e",
+          "notes": "Technisch aanspreekpunt voor complexe vraagstukken."
+        },
+        {
+          "id": "werkvoorbereider-e",
+          "title": "Werkvoorbereider E",
+          "level": "MBO/HBO",
+          "description": "Je bereidt projecten voor en zorgt voor planning, materiaal en personeel.",
+          "requirements": [
+            "HBO werk- en denkniveau",
+            "Ervaring als specialist",
+            "Sterke organisatorische vaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Projectmanagement HBO",
+              "provider": "Lok Academy",
+              "link": "/training/projectmanagement-hbo"
+            },
+            {
+              "label": "Calculatie & offertes",
+              "provider": "Lok Academy",
+              "link": "/training/calculatie"
+            }
+          ],
+          "nextStepId": "projectleider-e",
+          "notes": "Verantwoordelijk voor projectvoorbereiding en kostenbeheersing."
+        },
+        {
+          "id": "projectleider-e",
+          "title": "Projectleider E",
+          "level": "HBO",
+          "description": "Je leidt complexe elektrotechnische projecten van begin tot eind.",
+          "requirements": [
+            "HBO diploma",
+            "Ervaring als werkvoorbereider",
+            "Sterke communicatie- en leiderschapsvaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Leiderschap & management",
+              "provider": "Lok Academy",
+              "link": "/training/leiderschap"
+            },
+            {
+              "label": "Contractmanagement",
+              "provider": "Lok Academy",
+              "link": "/training/contractmanagement"
+            }
+          ],
+          "nextStepId": "teamleider",
+          "notes": "Eindverantwoordelijk voor projectresultaat en klanttevredenheid."
+        },
+        {
+          "id": "teamleider",
+          "title": "Teamleider/Project Lead",
+          "level": "HBO+",
+          "description": "Je leidt een team van projectleiders en monteurs en bent verantwoordelijk voor de strategische richting.",
+          "requirements": [
+            "HBO+ werk- en denkniveau",
+            "Ervaring als projectleider",
+            "Strategisch denkvermogen"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Strategisch management",
+              "provider": "Lok Academy",
+              "link": "/training/strategisch-management"
+            },
+            {
+              "label": "Business development",
+              "provider": "Lok Academy",
+              "link": "/training/business-development"
+            }
+          ],
+          "nextStepId": null,
+          "notes": "Topniveau binnen de organisatie met focus op groei en ontwikkeling."
+        }
+      ]
+    },
+    {
+      "id": "w",
+      "name": "Werktuigbouwkunde",
+      "summary": "Van monteur W naar projectleider W",
+      "meta": {
+        "icon": "wrench",
+        "color": "#10B981"
+      },
+      "steps": [
+        {
+          "id": "trainee",
+          "title": "Stagiair",
+          "level": "BBL/MBO",
+          "description": "Je leert de basis van werktuigbouwkunde en installatietechniek.",
+          "requirements": [
+            "BBL of MBO opleiding",
+            "Technisch inzicht",
+            "Handvaardigheid"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "VCA Basis",
+              "provider": "Lok Academy",
+              "link": "/training/vca-basis"
+            }
+          ],
+          "nextStepId": "monteur-w",
+          "notes": "Intensieve begeleiding bij praktijkwerkzaamheden."
+        },
+        {
+          "id": "monteur-w",
+          "title": "Monteur W",
+          "level": "MBO 2-3",
+          "description": "Je installeert en onderhoudt werktuigbouwkundige systemen.",
+          "requirements": [
+            "VCA Basis",
+            "Rijbewijs B",
+            "Basis kennis leidingwerk"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Leidingwerk & montage",
+              "provider": "Lok Academy",
+              "link": "/training/leidingwerk"
+            },
+            {
+              "label": "EP-W/B certificering",
+              "provider": "Lok Academy",
+              "link": "/training/ep-wb"
+            }
+          ],
+          "nextStepId": "first-monteur-w",
+          "notes": "Zelfstandig werken onder begeleiding van ervaren monteurs."
+        },
+        {
+          "id": "first-monteur-w",
+          "title": "1e Monteur W",
+          "level": "MBO 3-4",
+          "description": "Je begeleidt junior monteurs en werkt aan complexere installaties.",
+          "requirements": [
+            "EP-W/B certificering",
+            "Ervaring als monteur W",
+            "Leiderschapsvaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "F-gassen certificering",
+              "provider": "Lok Academy",
+              "link": "/training/f-gassen"
+            },
+            {
+              "label": "Planning & coördinatie",
+              "provider": "Lok Academy",
+              "link": "/training/planning"
+            }
+          ],
+          "nextStepId": "specialist-w",
+          "notes": "Verantwoordelijk voor kwaliteit en veiligheid van het team."
+        },
+        {
+          "id": "specialist-w",
+          "title": "Specialist W",
+          "level": "EP-W/B + F-gassen",
+          "description": "Je bent expert op het gebied van werktuigbouwkunde en koeltechniek.",
+          "requirements": [
+            "EP-W/B certificering",
+            "F-gassen certificering (indien koeltechniek)",
+            "Minimaal 5 jaar ervaring"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Geavanceerde koeltechniek",
+              "provider": "Lok Academy",
+              "link": "/training/koeltechniek"
+            },
+            {
+              "label": "Projectmanagement",
+              "provider": "Lok Academy",
+              "link": "/training/projectmanagement"
+            }
+          ],
+          "nextStepId": "werkvoorbereider-w",
+          "notes": "Technisch aanspreekpunt voor complexe werktuigbouwkundige vraagstukken."
+        },
+        {
+          "id": "werkvoorbereider-w",
+          "title": "Werkvoorbereider W",
+          "level": "MBO/HBO",
+          "description": "Je bereidt werktuigbouwkundige projecten voor en coördineert de uitvoering.",
+          "requirements": [
+            "HBO werk- en denkniveau",
+            "Ervaring als specialist W",
+            "Sterke organisatorische vaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Projectmanagement HBO",
+              "provider": "Lok Academy",
+              "link": "/training/projectmanagement-hbo"
+            },
+            {
+              "label": "Calculatie & offertes",
+              "provider": "Lok Academy",
+              "link": "/training/calculatie"
+            }
+          ],
+          "nextStepId": "projectleider-w",
+          "notes": "Verantwoordelijk voor projectvoorbereiding en kostenbeheersing."
+        },
+        {
+          "id": "projectleider-w",
+          "title": "Projectleider W",
+          "level": "HBO",
+          "description": "Je leidt complexe werktuigbouwkundige projecten van begin tot eind.",
+          "requirements": [
+            "HBO diploma",
+            "Ervaring als werkvoorbereider W",
+            "Sterke communicatie- en leiderschapsvaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Leiderschap & management",
+              "provider": "Lok Academy",
+              "link": "/training/leiderschap"
+            },
+            {
+              "label": "Contractmanagement",
+              "provider": "Lok Academy",
+              "link": "/training/contractmanagement"
+            }
+          ],
+          "nextStepId": "teamleider",
+          "notes": "Eindverantwoordelijk voor projectresultaat en klanttevredenheid."
+        },
+        {
+          "id": "teamleider",
+          "title": "Teamleider",
+          "level": "HBO+",
+          "description": "Je leidt een team van projectleiders en monteurs en bent verantwoordelijk voor de strategische richting.",
+          "requirements": [
+            "HBO+ werk- en denkniveau",
+            "Ervaring als projectleider W",
+            "Strategisch denkvermogen"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Strategisch management",
+              "provider": "Lok Academy",
+              "link": "/training/strategisch-management"
+            },
+            {
+              "label": "Business development",
+              "provider": "Lok Academy",
+              "link": "/training/business-development"
+            }
+          ],
+          "nextStepId": null,
+          "notes": "Topniveau binnen de organisatie met focus op groei en ontwikkeling."
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "name": "Service & Onderhoud",
+      "summary": "Van assistent service naar projectleider service",
+      "meta": {
+        "icon": "tool",
+        "color": "#F59E0B"
+      },
+      "steps": [
+        {
+          "id": "assistent-service",
+          "title": "Assistent Service",
+          "level": "MBO 2",
+          "description": "Je assisteert bij servicewerkzaamheden en leert de basis van onderhoud.",
+          "requirements": [
+            "MBO 2 opleiding",
+            "Servicegerichte instelling",
+            "Goede communicatieve vaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "VCA Basis",
+              "provider": "Lok Academy",
+              "link": "/training/vca-basis"
+            },
+            {
+              "label": "Klantcontact",
+              "provider": "Lok Academy",
+              "link": "/training/klantcontact"
+            }
+          ],
+          "nextStepId": "servicemonteur",
+          "notes": "Veel begeleiding en praktijkervaring opdoen."
+        },
+        {
+          "id": "servicemonteur",
+          "title": "Servicemonteur",
+          "level": "MBO 3",
+          "description": "Je voert zelfstandig service- en onderhoudswerkzaamheden uit.",
+          "requirements": [
+            "VCA Basis",
+            "Rijbewijs B",
+            "Ervaring met storingsdienst"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Storingsdiagnose",
+              "provider": "Lok Academy",
+              "link": "/training/storingsdiagnose"
+            },
+            {
+              "label": "Preventief onderhoud",
+              "provider": "Lok Academy",
+              "link": "/training/preventief-onderhoud"
+            }
+          ],
+          "nextStepId": "specialist-service",
+          "notes": "Zelfstandig werken en klantcontact onderhouden."
+        },
+        {
+          "id": "specialist-service",
+          "title": "Specialist Service",
+          "level": "MBO 4",
+          "description": "Je bent expert op het gebied van service en onderhoud en adviseert bij complexe problemen.",
+          "requirements": [
+            "MBO 4 diploma",
+            "Ervaring als servicemonteur",
+            "Sterke probleemoplossende vaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Geavanceerde diagnostiek",
+              "provider": "Lok Academy",
+              "link": "/training/diagnostiek"
+            },
+            {
+              "label": "Rapportage & documentatie",
+              "provider": "Lok Academy",
+              "link": "/training/rapportage"
+            }
+          ],
+          "nextStepId": "werkvoorbereider-service",
+          "notes": "Technisch aanspreekpunt voor complexe servicevraagstukken."
+        },
+        {
+          "id": "werkvoorbereider-service",
+          "title": "Werkvoorbereider Service",
+          "level": "MBO/HBO",
+          "description": "Je bereidt serviceprojecten voor en coördineert onderhoudsplannen.",
+          "requirements": [
+            "HBO werk- en denkniveau",
+            "Ervaring als specialist service",
+            "Sterke organisatorische vaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Onderhoudsplanning",
+              "provider": "Lok Academy",
+              "link": "/training/onderhoudsplanning"
+            },
+            {
+              "label": "Projectmanagement",
+              "provider": "Lok Academy",
+              "link": "/training/projectmanagement"
+            }
+          ],
+          "nextStepId": "projectleider-service",
+          "notes": "Verantwoordelijk voor serviceplanning en kostenbeheersing."
+        },
+        {
+          "id": "projectleider-service",
+          "title": "Projectleider Service",
+          "level": "HBO",
+          "description": "Je leidt grote service- en onderhoudsprojecten en bent verantwoordelijk voor klanttevredenheid.",
+          "requirements": [
+            "HBO diploma",
+            "Ervaring als werkvoorbereider service",
+            "Sterke communicatie- en leiderschapsvaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Leiderschap & management",
+              "provider": "Lok Academy",
+              "link": "/training/leiderschap"
+            },
+            {
+              "label": "Klantrelatiebeheer",
+              "provider": "Lok Academy",
+              "link": "/training/klantrelatiebeheer"
+            }
+          ],
+          "nextStepId": null,
+          "notes": "Eindverantwoordelijk voor servicekwaliteit en klanttevredenheid."
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "name": "Kantoor (Engineering & Werkvoorbereiding)",
+      "summary": "Van junior tekenaar naar teamleider",
+      "meta": {
+        "icon": "monitor",
+        "color": "#8B5CF6"
+      },
+      "steps": [
+        {
+          "id": "junior-tekenaar",
+          "title": "Junior Tekenaar/BIM",
+          "level": "MBO 3",
+          "description": "Je maakt technische tekeningen en BIM-modellen onder begeleiding.",
+          "requirements": [
+            "MBO 3 opleiding",
+            "Basis kennis AutoCAD/Revit",
+            "Technisch inzicht"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "AutoCAD Basis",
+              "provider": "Lok Academy",
+              "link": "/training/autocad-basis"
+            },
+            {
+              "label": "Revit Basis",
+              "provider": "Lok Academy",
+              "link": "/training/revit-basis"
+            }
+          ],
+          "nextStepId": "medior-tekenaar",
+          "notes": "Intensieve begeleiding bij het maken van technische tekeningen."
+        },
+        {
+          "id": "medior-tekenaar",
+          "title": "Medior Tekenaar",
+          "level": "MBO 4",
+          "description": "Je maakt complexere tekeningen en BIM-modellen en begeleidt junior collega's.",
+          "requirements": [
+            "MBO 4 diploma",
+            "Ervaring met AutoCAD/Revit",
+            "Goede communicatieve vaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "AutoCAD Gevorderd",
+              "provider": "Lok Academy",
+              "link": "/training/autocad-gevorderd"
+            },
+            {
+              "label": "Revit Gevorderd",
+              "provider": "Lok Academy",
+              "link": "/training/revit-gevorderd"
+            }
+          ],
+          "nextStepId": "senior-tekenaar",
+          "notes": "Zelfstandig werken aan complexe projecten."
+        },
+        {
+          "id": "senior-tekenaar",
+          "title": "Senior Tekenaar",
+          "level": "HBO",
+          "description": "Je bent expert op het gebied van technisch tekenen en BIM en adviseert bij complexe projecten.",
+          "requirements": [
+            "HBO werk- en denkniveau",
+            "Ervaring als medior tekenaar",
+            "Sterke technische vaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "BIM Management",
+              "provider": "Lok Academy",
+              "link": "/training/bim-management"
+            },
+            {
+              "label": "Calculatie & offertes",
+              "provider": "Lok Academy",
+              "link": "/training/calculatie"
+            }
+          ],
+          "nextStepId": "lead-tekenaar",
+          "notes": "Technisch aanspreekpunt voor complexe tekenprojecten."
+        },
+        {
+          "id": "lead-tekenaar",
+          "title": "Lead Tekenaar/Werkvoorbereider",
+          "level": "HBO",
+          "description": "Je leidt het tekenwerk en bereidt projecten voor op technisch gebied.",
+          "requirements": [
+            "HBO diploma",
+            "Ervaring als senior tekenaar",
+            "Sterke organisatorische vaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Projectmanagement",
+              "provider": "Lok Academy",
+              "link": "/training/projectmanagement"
+            },
+            {
+              "label": "Werkvoorbereiding",
+              "provider": "Lok Academy",
+              "link": "/training/werkvoorbereiding"
+            }
+          ],
+          "nextStepId": "projectleider-office",
+          "notes": "Verantwoordelijk voor technische projectvoorbereiding."
+        },
+        {
+          "id": "projectleider-office",
+          "title": "Projectleider Office",
+          "level": "HBO",
+          "description": "Je leidt complexe kantoorprojecten en bent verantwoordelijk voor de technische uitvoering.",
+          "requirements": [
+            "HBO diploma",
+            "Ervaring als lead tekenaar",
+            "Sterke communicatie- en leiderschapsvaardigheden"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Leiderschap & management",
+              "provider": "Lok Academy",
+              "link": "/training/leiderschap"
+            },
+            {
+              "label": "Contractmanagement",
+              "provider": "Lok Academy",
+              "link": "/training/contractmanagement"
+            }
+          ],
+          "nextStepId": "teamleider-office",
+          "notes": "Eindverantwoordelijk voor kantoorprojecten en teamresultaten."
+        },
+        {
+          "id": "teamleider-office",
+          "title": "Teamleider Office",
+          "level": "HBO+",
+          "description": "Je leidt een team van tekenaars en projectleiders en bent verantwoordelijk voor de strategische richting.",
+          "requirements": [
+            "HBO+ werk- en denkniveau",
+            "Ervaring als projectleider office",
+            "Strategisch denkvermogen"
+          ],
+          "recommendedTraining": [
+            {
+              "label": "Strategisch management",
+              "provider": "Lok Academy",
+              "link": "/training/strategisch-management"
+            },
+            {
+              "label": "Business development",
+              "provider": "Lok Academy",
+              "link": "/training/business-development"
+            }
+          ],
+          "nextStepId": null,
+          "notes": "Topniveau binnen de organisatie met focus op groei en ontwikkeling."
+        }
+      ]
+    }
+  ]
+}
