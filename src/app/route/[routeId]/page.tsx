@@ -5,9 +5,9 @@ import { PrintButton } from '@/components/PrintButton';
 import Link from 'next/link';
 
 interface RoutePageProps {
-  params: {
+  params: Promise<{
     routeId: string;
-  };
+  }>;
 }
 
 export default async function RoutePage({ params }: RoutePageProps) {
